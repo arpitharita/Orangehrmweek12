@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite" verbose="1" parallel="tests" thread-count="3" >
+    <test name="Chrome Test" >
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.orangehrm.testsuite.GrouppingLoginTest"></class>
+            <class name="com.orangehrm.testsuite.LoginTest"></class>
+            <class name="com.orangehrm.testsuite.UsersTest"></class>
+        </classes>
+    </test>
+    <test name="FireFox Test" >
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.orangehrm.testsuite.GrouppingLoginTest"></class>
+            <class name="com.orangehrm.testsuite.LoginTest"></class>
+            <class name="com.orangehrm.testsuite.UsersTest"></class>
+        </classes>
+    </test>
+    <test name="Edge Test" >
+        <parameter name="browser" value="ie"></parameter>
+        <classes>
+            <class name="com.orangehrm.testsuite.GrouppingLoginTest"></class>
+            <class name="com.orangehrm.testsuite.LoginTest"></class>
+            <class name="com.orangehrm.testsuite.UsersTest"></class>
+        </classes>
+    </test>
+</suite>
